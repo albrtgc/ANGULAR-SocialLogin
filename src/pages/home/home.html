@@ -1,0 +1,23 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Social Login - Home
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<ng-container *ngIf="user">
+		<h1 text-center>User loged!</h1>
+		<h2>{{ user.name }}</h2>
+		<h2>{{ user.email }}</h2>
+	</ng-container>
+
+</ion-content>
+
+<ion-footer>
+	<button ion-button full (click)="logout()">
+		Log out
+	</button>
+</ion-footer>
